@@ -1,0 +1,368 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.box {
+  height: 574px;
+  background: center/cover no-repeat url('/aaron-burden-6jYoil2GhVk-unsplash.jpg');
+  opacity: 0.95;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+
+}
+
+nav ul a {
+  text-decoration: none;
+  padding: 7px 15px;
+  margin: 5px;
+  font-size: 15px;
+
+  color: white;
+  text-transform: capitalize;
+
+}
+
+nav {
+  /* background-color: #090807e6; */
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  opacity: 100%;
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.txt {
+  color: #201d19;
+  float: right;
+  margin-top: 165px;
+  margin-right: 47px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.txt-create {
+  padding: 2px 36px;
+}
+
+.sub-text {
+  padding: 5px;
+  font-size: 10px;
+  color: #2f2713;
+  text-align: center;
+}
+
+nav ul li {
+
+  padding: 5px;
+  margin: 5px;
+}
+
+nav ul li:hover {
+  font-weight: bold;
+
+}
+
+nav ul a:hover {
+  color: black;
+
+}
+
+/* nav ul a:visited{
+    
+        color: green;
+      
+} */
+.box2 {
+  text-align: center;
+  padding: 10px;
+  width: 23%;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 14px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.content {
+  display: flex;
+  height: 80vh;
+  margin: 15px 10px;
+
+}
+
+.content img {
+  width: 92%;
+}
+
+.content h1 {
+ 
+  color: wheat;
+    margin: 5px;
+    text-transform: capitalize
+}
+
+.content p {
+  text-align: center;
+  font-size: 11px;
+}
+
+
+body {
+  font-size: 62.5%;
+  font-style: Arial;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  /* background-color: blue; */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+  
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+/* @keyframes topFadeOutVertical {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      top: 45%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  } */
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+
+.second-text {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 13.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  color: #ccc;
+}
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  color: #A3DDF0;
+  white-space: nowrap;
+}
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+.box2:hover{
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+.content h1 a{
+  text-decoration: none;
+  color: white;
+}
+.content h1 a:hover{
+  text-decoration:underline;
+}
+nav{
+  box-shadow: 2px 2px 14px;
+}
+.box{
+  box-shadow: 2px 28px 40px;
+}
+footer {
+  color: wheat;
+  /* background-color: #979772; */
+  background: linear-gradient(45deg, black, transparent);
+  height: 33px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+element.style {
+}
+button {
+}
+button {
+    border: 1px solid white;
+}
+button {
+    padding: 5px 14px;
+    background: linear-gradient(45deg, #b6c724, #d217177a);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+  border: 1px solid white;
+}
